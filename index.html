@@ -1,0 +1,165 @@
+<!doctype html>
+
+<html lang="en">  
+<head>  
+  <meta charset="utf-8" />  
+  <meta name="viewport" content="width=device-width,initial-scale=1" />  
+  <title>Campus Connect</title>  
+  <meta name="description" content="Campus Connect - announcements, events and resources for students." />  
+  <link rel="stylesheet" href="css/style.css" />  
+  <link rel="icon" href="images/logo.png" />  
+</head>  
+<body>  
+  <!-- NAV -->  
+  <header class="site-header" id="top">  
+    <div class="container header-inner">  
+      <a class="brand" href="#top"><img src="images/logo.png" alt="Campus Connect logo" class="logo"> Campus Connect</a>  <nav class="nav" id="nav">  
+    <a href="#home" class="nav-link">Home</a>  
+    <a href="#announcements" class="nav-link">Announcements</a>  
+    <a href="#events" class="nav-link">Events</a>  
+    <a href="#resources" class="nav-link">Resources</a>  
+    <a href="#about" class="nav-link">About</a>  
+    <a href="#contact" class="nav-link">Contact</a>  
+  </nav>  
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">  
+    <span></span><span></span><span></span>  
+  </button>  
+</div>
+
+  </header>    <!-- HERO -->    <section id="home" class="hero">  
+    <div class="hero-overlay"></div>  
+    <div class="container hero-inner">  
+      <div class="hero-content">  
+        <h1 class="hero-title">Welcome to <span class="accent">Campus Connect</span></h1>  
+        <p class="hero-sub">Stay updated with the latest announcements, events, and resources.</p>  <div class="hero-cta">  
+      <a class="btn primary" href="#announcements">Latest Announcements</a>  
+      <a class="btn ghost" href="#events">See Events</a>  
+    </div>  
+  </div>  
+
+  <div class="hero-image" aria-hidden="true">  
+    <img src="images/hero-bg.jpg" alt="Campus hero image" />  
+  </div>  
+</div>
+
+  </section>    <!-- ANNOUNCEMENTS -->    <section id="announcements" class="section">  
+    <div class="container">  
+      <h2 class="section-title">Announcements</h2>  
+      <p class="lead">Important notices and campus updates — check here first.</p>  <div class="cards" id="announcementsList" aria-live="polite">  
+    <!-- populated by JS -->  
+  </div>  
+</div>
+
+  </section>    <!-- EVENTS -->    <section id="events" class="section alt">  
+    <div class="container">  
+      <h2 class="section-title">Upcoming Events</h2>  
+      <p class="lead">Join activities and keep track of dates.</p>  <div class="events-grid" id="eventsList">  
+    <!-- populated by JS -->  
+  </div>  
+</div>
+
+  </section>    <!-- RESOURCES -->    <section id="resources" class="section">  
+    <div class="container">  
+      <h2 class="section-title">Resources</h2>  
+      <p class="lead">Downloadable files for students.</p>  <div class="resources" id="resourcesList">  
+    <!-- resource cards (some prefilled) -->  
+    <article class="resource-card">  
+      <img src="images/resource1.jpg" alt="Student handbook thumbnail" />  
+      <div class="resource-body">  
+        <h3>Academic Calendar</h3>  
+        <p>Schedule of classes and campus events.</p>  
+        <a class="btn small download" href="resources/Calendar.pdf" download>Download PDF</a>  
+      </div>  
+    </article>  
+
+    <article class="resource-card">  
+      <img src="images/resource2.png" alt="Programming notes thumbnail" />  
+      <div class="resource-body">  
+        <h3>Enrollment Guide</h3>  
+        <p>Steps and requirements for student enrollment.</p>  
+        <a class="btn small download" href="resources/Enrollment_Guide_2025.docx" download>Download DOCX</a>  
+      </div>  
+    </article>  
+
+    <article class="resource-card">  
+      <img src="images/resource3.png" alt="Campus guidelines thumbnail" />  
+      <div class="resource-body">  
+        <h3>Campus Guidelines</h3>  
+        <p>Rules and important procedures.</p>  
+        <a class="btn small download" href="resources/Campus_Guidelines_2025.pdf" download>Download PDF</a>  
+      </div>  
+    </article>  
+  </div>  
+</div>
+
+  </section>    <!-- ABOUT -->    <section id="about" class="section alt">  
+    <div class="container about-grid">  
+      <div>  
+        <h2 class="section-title">About Campus Connect</h2>  
+        <p class="lead">A static, responsive site to centralize announcements, events, and downloadable resources for the campus community.</p>  <ul class="about-list">  
+      <li><strong>Purpose:</strong> Centralize announcements and events</li>  
+      <li><strong>Target:</strong> Students, teachers, staff</li>  
+      <li><strong>Hosted:</strong> GitHub Pages</li>  
+    </ul>  
+  </div>  
+
+  <div class="about-stats">  
+    <div class="stat">  
+      <div class="stat-number" data-target="2">0</div>  
+      <p>Announcements</p>  
+    </div>  
+    <div class="stat">  
+      <div class="stat-number" data-target="3">0</div>  
+      <p>Upcoming Events</p>  
+    </div>  
+    <div class="stat">  
+      <div class="stat-number" data-target="3">0</div>  
+      <p>Resources</p>  
+    </div>  
+  </div>  
+</div>
+
+  </section>    <!-- CONTACT -->    <section id="contact" class="section">  
+    <div class="container contact-inner">  
+      <div class="contact-card">  
+        <h2 class="section-title">Contact</h2>  
+        <p class="lead">Suggestions? Use the demo contact form (static).</p>  <form id="contactForm" onsubmit="return false;" novalidate>  
+      <div class="form-grid">  
+        <label>  
+          <span>Name</span>  
+          <input type="text" name="name" placeholder="Your name" required />  
+        </label>  
+        <label>  
+          <span>Email</span>  
+          <input type="email" name="email" placeholder="you@school.edu" required />  
+        </label>  
+        <label class="full">  
+          <span>Message</span>  
+          <textarea name="message" rows="4" placeholder="Message..."></textarea>  
+        </label>  
+      </div>  
+
+      <div class="form-actions">  
+        <button class="btn primary" id="sendBtn" type="submit">Send (Demo)</button>  
+        <small class="muted">Static demo — no server connected</small>  
+      </div>  
+    </form>  
+  </div>  
+
+  <div class="contact-info">  
+    <h3>Developer</h3>  
+    <p><strong>Kian Katada</strong><br/>Associate in Computer Technology (ACT)<br/>Web Development 2</p>  
+
+    <h3>Hosted</h3>  
+    <p>GitHub Pages — push files and enable Pages in repo settings</p>  
+  </div>  
+</div>
+
+  </section>    <footer class="site-footer">  
+    <div class="container">  
+      <p>© <span id="year"></span> Campus Connect — Built by Kian Katada</p>  
+      <p class="muted">Designed for Web Development 2 — Demo site (static)</p>  
+    </div>  
+  </footer>    <script src="js/script.js" defer></script>  </body>  
+</html>
